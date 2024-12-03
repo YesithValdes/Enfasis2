@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tv_titulo_disponibilidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disponibilidad de Doctores"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"
+        android:background="@android:color/white"/>
+
+    <!-- Calendario -->
+    <GridView
+        android:id="@+id/grid_view_calendario"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+        android:gravity="center"
+        android:columnWidth="60dp"
+        android:stretchMode="columnWidth"
+        android:textColor="#005500"/>
+
+    <!-- Botón para regresar a la actividad principal -->
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tv_agendar_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AGENDAR"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Selección de médico -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Seleccione médico"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <Spinner
+            android:id="@+id/spinner_medicos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <!-- Selección de fecha -->
+    <LinearLayout
+        android:id="@+id/select_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione fecha"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginEnd="16dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_down"
+            android:contentDescription="Icono desplegable" />
+    </LinearLayout>
+
+    <!-- Mostrar médico y fecha seleccionados -->
+    <TextView
+        android:id="@+id/tv_seleccion_resumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Médico: \nFecha:"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón de aceptar -->
+    <Button
+        android:id="@+id/btn_aceptar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:backgroundTint="#6200EA"
+        android:textColor="#FFFFFF" />
+
+    <!-- Botón Ver Disponibilidad -->
+    <Button
+        android:id="@+id/btn_ver_disponibilidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Disponibilidad"
+        android:backgroundTint="#6200EA"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
+
